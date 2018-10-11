@@ -1,0 +1,16 @@
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.deps.json
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Common.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Core.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Entities.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Entities.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Common.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/bin/Debug/netstandard2.0/WhatShouldWeEat.Core.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.csprojAssemblyReference.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.csproj.CoreCompileInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.AssemblyInfoInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.AssemblyInfo.cs
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.csproj.CopyComplete
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/obj/Debug/netstandard2.0/WhatShouldWeEat.DataAccess.pdb

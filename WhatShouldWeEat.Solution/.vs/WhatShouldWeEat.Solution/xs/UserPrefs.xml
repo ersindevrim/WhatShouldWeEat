@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{D4452997-A177-4054-8058-8ED71A3ABE3B}|Default">
+  <MonoDevelop.Ide.ItemProperties.WhatShouldWeEat.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WhatShouldWeEat.WebUI/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="WhatShouldWeEat.WebUI/Controllers/HomeController.cs" Line="16" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<WhatShouldWeEat.Entities.categories>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!Doctype html>
+
+<html>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.categorykey | @item.categoryname | @item.categorydesc</li>
+    }
+</ul>
+</html>

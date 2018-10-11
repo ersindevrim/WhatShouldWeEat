@@ -1,0 +1,9 @@
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/bin/Debug/netstandard2.0/WhatShouldWeEat.Common.deps.json
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/bin/Debug/netstandard2.0/WhatShouldWeEat.Common.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/bin/Debug/netstandard2.0/WhatShouldWeEat.Common.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.csprojAssemblyReference.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.csproj.CoreCompileInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.AssemblyInfoInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.AssemblyInfo.cs
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/obj/Debug/netstandard2.0/WhatShouldWeEat.Common.pdb

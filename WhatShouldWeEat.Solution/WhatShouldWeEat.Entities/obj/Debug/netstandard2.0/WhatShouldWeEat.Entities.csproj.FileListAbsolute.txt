@@ -1,0 +1,9 @@
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/bin/Debug/netstandard2.0/WhatShouldWeEat.Entities.deps.json
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/bin/Debug/netstandard2.0/WhatShouldWeEat.Entities.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/bin/Debug/netstandard2.0/WhatShouldWeEat.Entities.pdb
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.csprojAssemblyReference.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.csproj.CoreCompileInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.AssemblyInfoInputs.cache
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.AssemblyInfo.cs
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.dll
+/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/obj/Debug/netstandard2.0/WhatShouldWeEat.Entities.pdb

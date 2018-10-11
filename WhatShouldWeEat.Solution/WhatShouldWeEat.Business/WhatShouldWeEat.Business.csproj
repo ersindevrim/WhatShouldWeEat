@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WhatShouldWeEat.Common\WhatShouldWeEat.Common.csproj" />
+    <ProjectReference Include="..\WhatShouldWeEat.Core\WhatShouldWeEat.Core.csproj" />
+    <ProjectReference Include="..\WhatShouldWeEat.DataAccess\WhatShouldWeEat.DataAccess.csproj" />
+    <ProjectReference Include="..\WhatShouldWeEat.Entities\WhatShouldWeEat.Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\..\..\..\usr\local\share\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.options\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
