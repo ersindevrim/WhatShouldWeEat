@@ -1,0 +1,62 @@
+﻿@model WhatShouldWeEat.Entities.dimensions
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a href="/Admin/Index">Admin</a>
+            <span>/</span>
+            <span>
+                <a href="/Dimesion/Index">Ölçüler</a>
+            </span>
+            <span>/</span>
+            <span>Ölçü Sil</span>
+        </h4>
+    </div>
+
+</div>
+<div class="card">
+    <div class="card-header">Kategori Sil</div>
+    <div class="card-body">
+        <div class="alert alert-danger" role="alert">
+            <b>@Model.dimname</b> isimli kategoriyi silmek istediğinize eminmisiniz?
+        </div>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayName("Dim Key")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.dimkey)
+                </dd>
+
+                <dt>
+                    @Html.DisplayName("Dim Name")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.dimname)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Sil" class="btn btn-danger" />
+                @Html.ActionLink("İptal", "Index", "Dimension", null, new { @class = "btn btn-info" })
+
+            </div>
+            }
+        </div>
+    </div>
+</div>

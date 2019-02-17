@@ -1,0 +1,105 @@
+﻿@model WhatShouldWeEat.Entities.foods
+@{
+    Layout = "~/Views/Shared/_DetailLayout.cshtml";
+}
+
+<div class="col-lg-8">
+    <div class="margin-bottom-40px card border-0 box-shadow">
+        <div class="card-img-top"><a href="#"><img src="~/assets/img/recipes-single.jpg" alt=""></a></div>
+        <div class="padding-lr-30px padding-tb-20px">
+            <h5 class="margin-bottom-20px margin-top-10px"><a class="text-dark" href="#">@Model.foodname</a></h5>
+            <div class="row">
+                <div class="rating col-md-9">
+                    <ul>
+                        @if (ViewBag.Rate < 1)
+                        {
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        }
+                        else if (ViewBag.Rate < 1.5)
+                        {
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        }
+                        else if (ViewBag.Rate < 2.5)
+                        {
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        }
+                        else if (ViewBag.Rate < 3.5)
+                        {
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        }
+                        else if (ViewBag.Rate < 4.5)
+                        {
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li></li>
+                        }
+                        else
+                        {
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                            <li class="active"></li>
+                        }
+                        @ViewBag.Rate
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <button data-toggle="modal" data-target="#exampleModal" class="btn-sm float-right btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase border-radius-10 padding-10px">Yorumlar</button>
+                </div>
+            </div>
+            <hr>
+            <h3>Ingredients</h3>
+            <ul>
+                <li><strong>16 oz</strong> rotini noodles</li>
+                <li><strong>24 oz</strong> spaghetti sauce (prego traditional)</li>
+                <li><strong>1/2 lb</strong> ground beef</li>
+                <li><strong>15 oz</strong> ricotta cheese</li>
+                <li><strong>14 oz</strong> mozzarella shredded</li>
+                <li><strong>1 can</strong> sliced olives</li>
+                <li><strong>1 packages</strong> pepperoni slices</li>
+            </ul>
+            <h3>Method</h3>
+            <ol>
+                <li>preheat oven to 350º</li>
+                <li>bring noodles to a boil then drain</li>
+                <li>while noodles are cooking in a bowl mix ricotta cheese, mozzarella cheese and olives together. it will be thick</li>
+                <li>cook ground beef then drain</li>
+                <li>add spaghetti sauce to ground beef</li>
+                <li>add pasta to beef and sauce mix, stir until well blended then move to 16x9 casserole dish</li>
+                <li>spread cheese mixture all over evenly</li>
+                <li>place pepperonis on top snd remember to partially overlap pepperonis since they shrink</li>
+                <li>back in 350º oven for 20 minutes</li>
+            </ol>
+            <hr>
+            <div class="row no-gutters">
+                <div class="col-4 text-left"><a href="#" class="text-red"><i class="far fa-heart"></i> Save</a></div>
+                <div class="col-8 text-right"><a href="#" class="text-grey-2"><i class="fas fa-users"></i> 6-8 servings</a></div>
+            </div>
+        </div>
+        <div class="background-light-grey border-top-1 border-grey padding-lr-30px padding-tb-20px">
+            <a href="#" class="d-inline-block text-grey-3 h6 margin-bottom-0px margin-right-15px"><img src="assets/img/zoal-8.jpg" class="height-30px border-radius-30 margin-right-15px" alt=""> Salim Aldosery</a>
+        </div>
+    </div>
+</div>
+
+
+@await Component.InvokeAsync("Comments", new { foodKey = Model.foodkey })

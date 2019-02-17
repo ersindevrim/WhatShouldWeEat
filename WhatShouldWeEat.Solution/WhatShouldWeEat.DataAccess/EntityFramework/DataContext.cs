@@ -9,7 +9,7 @@ namespace WhatShouldWeEat.DataAccess.EntityFramework
     {
         override protected void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "YOUR CONNECTION STRING";
+            string connectionString = "User ID = fgtjtchj;Password = 8H1bUHfARAo9RD-kdV6oU9UuqeaueD59; Host = horton.elephantsql.com;Port = 5432;Database = fgtjtchj";
             optionsBuilder.UseNpgsql(connectionString);
         }
 
@@ -50,6 +50,17 @@ namespace WhatShouldWeEat.DataAccess.EntityFramework
         }
 
         public DbSet<users> users
+        {
+            get;
+            set;
+        }
+        public DbSet<stars> stars
+        {
+            get;
+            set;
+        }
+
+        public DbSet<comments> comments
         {
             get;
             set;

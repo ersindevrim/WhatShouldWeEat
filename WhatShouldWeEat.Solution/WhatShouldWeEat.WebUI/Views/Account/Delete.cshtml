@@ -1,0 +1,58 @@
+﻿@model WhatShouldWeEat.Entities.users
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card mb-4 wow fadeIn">
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a href="/Admin/Index">Admin</a>
+            <span>/</span>
+            <span>
+                <a href="/Account/Index">Kullanıcılar</a>
+            </span>
+            <span>/</span>
+            <span>Kullanıcı Sil</span>
+        </h4>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">Kullanıcı Sil</div>
+    <div class="card-body">
+        <div class="alert alert-danger" role="alert">
+            <b>@Model.username</b> isimli kullanıcıyı silmek istediğinize eminmisiniz?
+        </div>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayName("User Key")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.userkey)
+                </dd>
+                <dt>
+                    @Html.DisplayName("User Name")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.username)
+                </dd>
+                <dt>
+                    @Html.DisplayName("Email")
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.mailadress)
+                </dd>
+            </dl>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Sil" class="btn btn-danger" />
+                    @Html.ActionLink("İptal", "Index", "Account", null, new { @class = "btn btn-info" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

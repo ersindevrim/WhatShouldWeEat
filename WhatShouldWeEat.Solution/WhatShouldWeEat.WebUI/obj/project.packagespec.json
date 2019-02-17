@@ -1,0 +1,73 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.WebUI/WhatShouldWeEat.WebUI.csproj",
+    "projectName": "WhatShouldWeEat.WebUI",
+    "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.WebUI/WhatShouldWeEat.WebUI.csproj",
+    "outputPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.WebUI/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Business/WhatShouldWeEat.Business.csproj": {
+            "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Business/WhatShouldWeEat.Business.csproj"
+          },
+          "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/WhatShouldWeEat.Common.csproj": {
+            "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Common/WhatShouldWeEat.Common.csproj"
+          },
+          "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Core/WhatShouldWeEat.Core.csproj": {
+            "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Core/WhatShouldWeEat.Core.csproj"
+          },
+          "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/WhatShouldWeEat.DataAccess.csproj": {
+            "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.DataAccess/WhatShouldWeEat.DataAccess.csproj"
+          },
+          "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/WhatShouldWeEat.Entities.csproj": {
+            "projectPath": "/Users/ersindevrim/Projects/WhatShouldWeEat.Solution/WhatShouldWeEat.Entities/WhatShouldWeEat.Entities.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "ExtCore.Data.EntityFramework.PostgreSql": {
+          "target": "Package",
+          "version": "[3.3.0, )"
+        },
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.1, )",
+          "autoReferenced": true
+        },
+        "Microsoft.AspNetCore.Session": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

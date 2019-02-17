@@ -3,7 +3,7 @@ namespace WhatShouldWeEat.Entities
 {
     public class carrier
     {
-        public Int32 id
+        public Int32? id
         {
             get;
             set;
@@ -28,12 +28,6 @@ namespace WhatShouldWeEat.Entities
         }
 
         public Double quantity
-        {
-            get;
-            set;
-        }
-
-        public String rcpykey
         {
             get;
             set;

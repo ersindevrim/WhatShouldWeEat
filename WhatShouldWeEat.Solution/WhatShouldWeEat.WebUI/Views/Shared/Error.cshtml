@@ -1,0 +1,77 @@
+﻿@model WhatShouldWeEat.WebUI.ViewModels.ErrorViewModel
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="~/AdminPageContent/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="~/AdminPageContent/syntax-highlighter/styles/shThemeDefault.css" media="all">
+    <link rel="stylesheet" href="~/AdminPageContent/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/AdminPageContent/css/normalize.min.css">
+    <link rel="stylesheet" href="~/AdminPageContent/css/bootstrap.css">
+    <link rel="stylesheet" href="~/AdminPageContent/css/main.css">
+</head>
+<body id="welcome">
+    <aside class="left-sidebar">
+        <div class="logo">
+            <a href="/">
+                <img src="~/AdminPageContent/img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="left-nav">
+            <ul>
+                <li>@Html.ActionLink("Ana Sayfa", "Index", "Home")</li>
+                <li>@Html.ActionLink("Profilim", "Profile", "Account")</li>
+                <li>@Html.ActionLink("Çıkış", "LogOut", "Account")</li>
+            </ul>
+        </div>
+    </aside>
+    <div id="main-wrapper">
+        <div class="main-content">
+            <section id="welcome">
+                <div class="content-header">
+                    <h1>@Model.Title</h1>
+                </div>
+                <br />
+                <div class="welcome">
+                    <h2 class="twenty">@Model.Title</h2>
+                    @foreach (var item in Model.Items)
+                    {
+                        <p> @item </p>
+                    }
+                    <br />
+                    @{
+                        string js = string.Empty;
+                        if (Model.IsRedirecting)
+                        {
+                            js = " setTimeout(function () { window.location = '" + @Model.RedirectingUrl + "'; },5000);";
+                        }
+                    }
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Essential JavaScript Libraries
+    ==============================================-->
+    <script type="text/javascript" src="~/AdminPageContent/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/syntax-highlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all()</script>
+    <script type="text/javascript" src="~/AdminPageContent/js/custom.js"></script>
+    <script>
+
+    $(
+        function() {
+            @Html.Raw(js);
+        });
+
+    </script>
+</body>
+</html>

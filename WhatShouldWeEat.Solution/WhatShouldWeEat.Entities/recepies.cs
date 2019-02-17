@@ -3,7 +3,7 @@ namespace WhatShouldWeEat.Entities
 {
     public class recepies
     {
-        public Int32 id
+        public Int32? id
         {
             get;
             set;
@@ -22,6 +22,12 @@ namespace WhatShouldWeEat.Entities
         }
 
         public Boolean isapproved
+        {
+            get;
+            set;
+        }
+
+        public String fokey
         {
             get;
             set;

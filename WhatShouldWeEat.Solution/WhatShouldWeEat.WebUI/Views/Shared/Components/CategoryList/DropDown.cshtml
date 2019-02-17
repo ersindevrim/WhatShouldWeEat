@@ -1,0 +1,34 @@
+﻿@model IEnumerable<WhatShouldWeEat.Entities.categories>
+
+<div class="margin-top-45px">
+    <div class="row justify-content-center margin-tb-60px">
+        <div class="col-lg-8">
+            <div class="listing-search">
+                <form class="row no-gutters">
+                    <div class="col-md-4">
+                        <div class="keywords">
+                            <input class="listing-form first" type="text" placeholder="Keywords..." value="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="categories dropdown">
+                            <a class="listing-form d-block text-nowrap" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                @foreach (var item in Model)
+                                {
+                                    <button class="dropdown-item text-up-small" type="button">@item.categoryname</button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="listing-bottom background-second-color box-shadow" href="#">Search Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

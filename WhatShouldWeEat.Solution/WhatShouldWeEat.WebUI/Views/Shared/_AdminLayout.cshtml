@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/AdminPageContent/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/AdminPageContent/css/mdb.min.css" rel="stylesheet">
+    <link href="~/AdminPageContent/css/style.min.css" rel="stylesheet">
+</head>
+<body class="grey lighten-3">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+                    <strong class="blue-text">Ne Pişirsek</strong>
+                </a>
+                <!-- Collapse -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+                    <!-- Right -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="/Account/Profile" class="nav-link waves-effect">
+                                <i class="fa fa-user"></i> @User.Identity.Name
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Account/LogOut" class="nav-link border border-light rounded waves-effect">
+                                <i class="fa fa-sign-out mr-2"></i>Çıkış
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Sidebar -->
+        <div class="sidebar-fixed position-fixed">
+            <a class="logo-wrapper waves-effect">
+                <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">
+            </a>
+            <div class="list-group list-group-flush">
+                <a href="/Account/Index" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-user mr-3"></i>Kullanıcılar
+                </a>
+                <a href="/Category/Index" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-list mr-3"></i>Kategoriler
+                </a>
+                <a href="/Dimension/Index" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-percent mr-3"></i>Ölçüler
+                </a>
+                <a href="/Food/Index" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-cutlery mr-3"></i>Yemekler
+                </a>
+                <a href="#" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-sticky-note-o mr-3"></i>Tarifler
+                </a>
+                <a href="#" class="list-group-item list-group-item-action waves-effect">
+                    <i class="fa fa-lemon-o mr-3"></i>Malzemeler
+                </a>
+            </div>
+        </div>
+        <!-- Sidebar -->
+    </header>
+    <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+            @RenderBody()
+        </div>
+    </main>
+    <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Call to action-->
+        <div class="pt-4">
+
+        </div>
+        <!--/.Call to action-->
+        <hr class="my-4">
+        <!-- Social icons -->
+        <div class="pb-4">
+        </div>
+        <!-- Social icons -->
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+            © 2018 Copyright:
+            <a href="/" target="_blank"> Ne Pişirsek? </a>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+
+    <script type="text/javascript" src="~/AdminPageContent/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/AdminPageContent/js/mdb.min.js"></script>
+    <script type="text/javascript">// Animations initialization
+        new WOW().init();
+    </script>
+</body>
+</html>

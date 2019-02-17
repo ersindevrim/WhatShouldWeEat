@@ -1,0 +1,19 @@
+﻿
+
+Asp.Net te çağırdığımız
+- HttpStatusCodeResult(HttpStatusCode.BadRequest);
+- HttpNotFound();
+
+Asp.Net Core da ;
+
+StatusCode(404); şeklindedir.
+Gerekli bilgilendirme aşağıda mevcuttur.
+
+Ok() = StatusCode(200)
+Created() = StatusCode(201)
+NoContent() = StatusCode(204)
+BadRequest() = StatusCode(400)
+Unauthorized() = StatusCode(401)
+Forbid() = StatusCode(403)
+NotFound() = StatusCode(404)
+

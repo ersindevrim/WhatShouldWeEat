@@ -1,0 +1,64 @@
+﻿@model WhatShouldWeEat.Entities.users
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div id="page-title" class="padding-tb-30px gradient-white text-center">
+        <div class="container">
+            <ol class="breadcrumb opacity-5">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li class="active">Giriş Sayfası</li>
+            </ol>
+            <h1 class="font-weight-300">Giriş</h1>
+        </div>
+    </div>
+    <div class="container margin-bottom-100px">
+        <!--======= log_in_page =======-->
+        <div id="log-in" class="site-form log-in-form box-shadow border-radius-10">
+
+            <div class="form-output">
+                <form>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Kullanıcı Adı</label>
+                        @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Şifre</label>
+                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                    </div>
+
+                    <div class="remember">
+                        <div class="checkbox">
+
+                        </div>
+                        <a href="#" class="forgot">Şifremi unuttum</a>
+                    </div>
+                    <button class="btn btn-md btn-primary full-width" type="submit">Giriş Yap</button>
+                    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+                    {
+                        <br />
+                        <div class="alert alert-danger">
+                            <a class="close" data-dismiss="alert">x</a>
+                            <h5 class="alert-heading">Hata : </h5>
+                            @Html.ValidationSummary(true)
+                        </div>
+                    }
+                    <div class="or"></div>
+
+                    <a href="#" class="btn btn-md bg-facebook full-width btn-icon-left"><i class="fab fa-facebook margin-right-8px" aria-hidden="true"></i> Login with Facebook</a>
+
+                    <a href="#" class="btn btn-md bg-twitter full-width btn-icon-left"><i class="fab fa-twitter margin-right-8px" aria-hidden="true"></i> Login with Twitter</a>
+
+
+                    <p>Hesabınız yok mu? <a href="/Account/Register">Hemen üye olun!</a> </p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+}
+

@@ -1,26 +1,28 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace WhatShouldWeEat.Entities
 {
     public class users
     {
-        public Int32 id
+        public Int32? id
         {
             get;
             set;
         }
-
+        [Required]
         public String username
         {
             get;
             set;
         }
-
+        [Required]
         public String password
         {
             get;
             set;
         }
-
+        [Required]
         public String mailadress
         {
             get;
@@ -52,6 +54,12 @@ namespace WhatShouldWeEat.Entities
         }
 
         public String userkey
+        {
+            get;
+            set;
+        }
+
+        public String profileimage
         {
             get;
             set;

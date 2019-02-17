@@ -1,16 +1,73 @@
-﻿@model IEnumerable<WhatShouldWeEat.Entities.categories>
-
+﻿
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!Doctype html>
+<div class="banner padding-tb-20px">
+    <div class="container">
+        <div class="padding-tb-120px z-index-2 position-relative">
+            <div class="text-center">
+                <h1 class="text-white pull-l icon-large font-weight-500 margin-bottom-40px">+20,000</h1>
+                <h3 class="text-white icon-large font-weight-100">Cooking Recipes</h3>
+            </div>
+            @await Component.InvokeAsync("CategoryList",new { tip = "DropDown" })
+        </div>
+    </div>
+    <!-- //container  -->
+    <video autoplay loop id="video-background" muted plays-inline>
+        <source src="~/assets/img/video.qt" type="video/mp4">
+    </video>
+</div>
 
-<html>
-<ul>
-    @foreach (var item in Model)
-    {
-        <li>@item.categorykey | @item.categoryname | @item.categorydesc</li>
-    }
-</ul>
-</html>
+<div class="background-light-grey">
+    <!-- Categories -->
+    @await Component.InvokeAsync("CategoryList")
+</div>
+
+<section class="padding-tb-100px background-light-grey">
+    <div class="container">
+        <div class="title text-center">
+            <h2 class="font-weight-700 text-main-color">Latest Recipes</h2>
+
+
+            <div class="row justify-content-center margin-bottom-45px">
+                <div class="col-md-7">
+                    <p class="text-grey-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+        </div>
+        <div class="recipes-masonry">
+            @await Component.InvokeAsync("Foods")
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn box-shadow margin-top-50px padding-tb-10px btn-sm border-2 border-radius-30 btn-inline-block width-210px background-second-color text-white">Show All Recipes</a>
+        </div>
+    </div>
+    <!-- // container -->
+
+<div class="padding-tb-10px background-light-grey">
+
+</div>
+<div class="instgram-feed">
+    <div class="row no-gutters">
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-1.jpg" alt></a>
+        </div>
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-2.jpg" alt></a>
+        </div>
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-3.jpg" alt></a>
+        </div>
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-4.jpg" alt></a>
+        </div>
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-5.jpg" alt></a>
+        </div>
+        <div class="col-md-2 col-6">
+            <a href="#"><img src="~/assets/img/instgram-6.jpg" alt></a>
+        </div>
+    </div>
+</div>
+</section>

@@ -1,0 +1,60 @@
+﻿@model WhatShouldWeEat.Entities.users
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    <div id="page-title" class="padding-tb-30px gradient-white text-center">
+        <div class="container">
+            <ol class="breadcrumb opacity-5">
+                <li><a href="#">Ana Sayfa</a></li>
+                <li class="active">Yeni Üye</li>
+            </ol>
+            <h1 class="font-weight-300">Üye Ol</h1>
+        </div>
+    </div>
+    <div class="container margin-bottom-100px">
+        <!--======= log_in_page =======-->
+        <div id="log-in" class="site-form log-in-form box-shadow border-radius-10">
+
+            <div class="form-output">
+                <form>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Kullanıcı Adı</label>
+                        @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">E-Mail</label>
+                        @Html.EditorFor(model => model.mailadress, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group label-floating">
+                        <label class="control-label">Şifre</label>
+                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+                    </div>
+
+                    <div class="remember">
+                        <div class="checkbox">
+
+                        </div>
+                        <a href="#" class="forgot">Şifremi unuttum</a>
+                    </div>
+                    <button class="btn btn-md btn-primary full-width" type="submit">Hesap Oluştur</button>
+                    @if (ViewData.ModelState.Any(x => x.Value.Errors.Any()))
+                    {
+                        <br />
+                        <div class="alert alert-danger">
+                            <a class="close" data-dismiss="alert">x</a>
+                            <h5 class="alert-heading">Hata : </h5>
+                            @Html.ValidationSummary(true)
+                        </div>
+                    }
+                    <p>Zaten üye misiniz? <a href="/Account/Login">Giriş Yapın!</a> </p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+}

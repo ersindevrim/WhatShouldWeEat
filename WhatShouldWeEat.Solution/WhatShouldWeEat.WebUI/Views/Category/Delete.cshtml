@@ -1,0 +1,70 @@
+﻿@model WhatShouldWeEat.Entities.categories
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card mb-4 wow fadeIn">
+
+    <!--Card content-->
+    <div class="card-body d-sm-flex justify-content-between">
+
+        <h4 class="mb-2 mb-sm-0 pt-1">
+            <a href="/Admin/Index">Admin</a>
+            <span>/</span>
+            <span>
+                <a href="/Category/Index">Kategoriler</a>
+            </span>
+            <span>/</span>
+            <span>Kategori Sil</span>
+        </h4>
+    </div>
+
+</div>
+<div class="card">
+    <div class="card-header">Kategori Sil</div>
+    <div class="card-body">
+        <div class="alert alert-danger" role="alert">
+            <b>@Model.categoryname</b> isimli kategoriyi silmek istediğinize eminmisiniz?
+        </div>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayName("Category Key")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.categorykey)
+                </dd>
+
+                <dt>
+                    @Html.DisplayName("Category Name")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.categoryname)
+                </dd>
+
+                <dt>
+                    @Html.DisplayName("Category Desc")
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.categorydesc)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Sil" class="btn btn-danger" />
+                @Html.ActionLink("İptal", "Index", "Category", null, new { @class = "btn btn-info" })
+
+            </div>
+            }
+        </div>
+    </div>
+</div>
